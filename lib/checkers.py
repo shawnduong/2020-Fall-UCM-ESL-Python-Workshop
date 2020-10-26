@@ -124,7 +124,7 @@ class Checkers:
 
 						# Set self.selected to a copy of the selected piece.
 
-
+						self.selected = 
 
 						# Highlight the selected piece.
 						# (Remember to give valid inputs, see the manual!)
