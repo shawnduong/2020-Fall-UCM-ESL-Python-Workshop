@@ -83,3 +83,31 @@ Like in real-life programming, you have tools in a toolbox. You don't need to us
 `quit_game()` quits the game immediately.
 
 `random_number(minimum, maximum)` generates a random integer from the minimum (inclusive) to the maximum (inclusive).
+
+## Workshop 3 Reference Guide
+
+Workshop 3 contains some functionality made specifically for the workshop that can help you make your program. Please note that these are *not* built into the actual base Python programming language. These are things that I've made specifically for this workshop for you to use so that you can focus on developing logic instead of memorizing language.
+
+Like in real-life programming, you have tools in a toolbox. You don't need to use all of the tools in your toolbox. Sometimes, you might need to make your own tools.
+
+Note how all of these start with `self.`. Remember that we're talking about methods now instead of functions!
+
+`self.get_coordinates(event)` takes a Pygame event and returns a set of coordinates `(x, y)` corresponding to the tile that the player clicked.
+
+`self.player_selected_their_own_piece(color, coordinates)` takes the current player's color and the selected coordinates and returns True if the player selected their own piece.
+
+`self.selected_piece(piece)` returns a copy of the selected piece.
+
+`self.highlight_selected(coordinates)` highlights the piece at the given coordinates.
+
+`self.player_selected_their_own_highlighted_piece(color, coordinates)` takes in the player's color and a set of coordinates and returns True if they selected their own highlighted piece.
+
+`self.unhighlight_selected(coordinates)` takes in a set of coordinates and unhighlights the piece there.
+
+`self.piece_highlighted_and_player_selects_another_tile(color, coordinates)` takes in the player's color and a set of coordinates and returns True if a piece is currently highlighted and the player selects another tile.
+
+`self.move_highlighted_piece_to_was_successful(coordinates)` takes in a set of coordinates and moves the highlighted piece there. If it was successful, then it will return true.
+
+Some other things you might want to know:
+
+`self.turn` is a variable storing an integer that keeps track of turns. You will need to implement incrementing this in your code!
